@@ -1,0 +1,596 @@
+@charset "UTF-8";
+body {
+  overflow-x: hidden; }
+
+/*
+**********************************************************************
+            HEADER COM LOGOTIPO E BOTÕES
+******************************************************************
+ */
+header {
+  width: 100%;
+  margin: 0;
+  height: 50vh;
+  background-image: linear-gradient(to right, #F2F1F2, #B7BABD);
+  height: 150px;
+  display: flex; }
+  header .header-logo {
+    width: 50%;
+    height: 100%; }
+    header .header-logo img {
+      width: 40%;
+      position: relative;
+      top: 50px;
+      left: 40px; }
+  header .header-buttons {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    header .header-buttons button {
+      background: #1863AD;
+      width: 35%;
+      padding: .5rem .1rem;
+      border-radius: 15px;
+      border: none; }
+      header .header-buttons button a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px; }
+
+/*
+**********************************************************************
+            GESTORA DE PARTICIPAÇÕES PRIMEIRO BLOCO
+******************************************************************
+ */
+main {
+  position: relative; }
+  main img {
+    width: 100%; }
+  main div {
+    width: 39%;
+    background: #1A64AE;
+    padding: 9px 18px;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    min-width: 241px;
+    box-sizing: border-box;
+    max-width: 641px; }
+    main div h2 {
+      color: white;
+      font-family: arial;
+      font-size: 30px;
+      margin: 0; }
+    main div p {
+      color: white;
+      font-size: 20px;
+      font-family: arial; }
+
+/*
+**********************************************************************
+    TERCIRO BLOCO SATIS CORPORATE DUAS COLUNAS IMAGEM E TEXTO
+******************************************************************
+ */
+.about-us {
+  position: relative; }
+  .about-us img {
+    width: 100%; }
+  .about-us div {
+    padding: 150px 0 0 0;
+    width: 45%;
+    height: 90%;
+    margin-right: 20px;
+    position: absolute;
+    top: 8%;
+    left: 50%; }
+    .about-us div h2 {
+      font-size: 30px;
+      color: #2369B3;
+      font-family: arial;
+      margin: 0; }
+    .about-us div p {
+      color: #2369B3;
+      font-family: arial;
+      font-size: 22px;
+      line-height: 1.6; }
+
+.intermezzo {
+  position: relative; }
+  .intermezzo img {
+    width: 100%; }
+  .intermezzo h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    font-size: 45px; }
+
+/*
+**********************************************************************
+          PARCEIROS E LINKS
+******************************************************************
+ */
+.partners {
+  background: #F2F1F2;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  height: 50vh;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  height: 100%; }
+  .partners p {
+    color: #2369B3;
+    font-family: arial;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 10px;
+    text-align: left;
+    font-size: 22px; }
+  .partners .link-partners {
+    display: flex;
+    flex-wrap: wrap; }
+    .partners .link-partners span {
+      width: 30%;
+      min-width: 300px;
+      max-height: 3rem;
+      margin: 10px auto;
+      position: relative; }
+      .partners .link-partners span img {
+        width: 52%;
+        position: relative;
+        top: 0;
+        left: 23%;
+        max-width: 37%; }
+
+/*
+**********************************************************************
+        NOSSA VISÃO, NOSSA MISSÃO, NOSSOS VALORES
+******************************************************************
+ */
+.overture-sale {
+  display: flex;
+  justify-content: space-around;
+  padding: 26px; }
+  .overture-sale div {
+    width: 30%;
+    cursor: pointer;
+    position: relative; }
+    .overture-sale div img {
+      width: 60%;
+      margin: 20px 23% 0px;
+      max-width: 250px; }
+    .overture-sale div h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgba(71, 71, 74, 0.5);
+      text-align: center;
+      font-size: 1rem;
+      width: 40%;
+      margin: 10px 31%;
+      max-width: 174px; }
+    .overture-sale div .nossa-visao {
+      display: none;
+      position: absolute;
+      top: 0px;
+      left: -11px;
+      background: #205997;
+      height: 98%;
+      padding: 5px 11px;
+      width: 100%;
+      overflow: auto; }
+      .overture-sale div .nossa-visao p {
+        color: white;
+        font-size: 18px;
+        line-height: 1.7;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px; }
+    .overture-sale div.show-box {
+      display: block; }
+    .overture-sale div .nossa-missao {
+      display: none;
+      position: absolute;
+      top: -1px;
+      left: -11px;
+      background: #0098da;
+      height: 0;
+      overflow: hidden;
+      padding: 6px 11px;
+      width: 100%;
+      overflow: auto; }
+      .overture-sale div .nossa-missao p {
+        color: white;
+        font-size: 18px;
+        line-height: 1.5;
+        font-family: Arial, Helvetica, sans-serif; }
+    .overture-sale div.show-box {
+      display: block;
+      animation: open-close 1s;
+      animation-fill-mode: forwards; }
+
+@keyframes open-close {
+  from {
+    height: 0; }
+  to {
+    height: 96%; } }
+    .overture-sale div .nossos-valores {
+      display: none;
+      position: absolute;
+      top: 0px;
+      left: -10px;
+      background: #00a3b2;
+      height: 98%;
+      padding: 5px 11px;
+      width: 100%;
+      overflow: auto; }
+      .overture-sale div .nossos-valores p {
+        color: white;
+        font-size: 17px;
+        line-height: 1.5;
+        font-family: Arial, Helvetica, sans-serif; }
+    .overture-sale div.show-box {
+      display: block; }
+
+/*
+**********************************************************************
+                    FOOTER
+******************************************************************
+ */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #1A64AE;
+  height: 400px;
+  width: 100%;
+  margin: 0;
+  height: 50vh;
+  padding: 10px 10px;
+  box-sizing: border-box; }
+  footer div {
+    padding: 20px; }
+    footer div img {
+      width: 50%; }
+    footer div p {
+      color: #2369B3;
+      font-family: arial;
+      font-size: 16px;
+      line-height: 1.6;
+      color: white;
+      font-size: 20px;
+      line-height: 1.1; }
+  footer .footer-right img {
+    width: 100%;
+    position: relative;
+    top: 6%;
+    max-width: 398px;
+    left: 8%; }
+  footer .footer-right h3 {
+    position: relative;
+    top: 0%;
+    left: 8%;
+    color: white;
+    font-family: arial;
+    background: #3a73ad;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    max-width: 389px; }
+  footer .footer-left img {
+    margin: 30px 0;
+    max-width: 300px; }
+  footer .footer-left p {
+    width: 80%; }
+
+/*
+**********************************************************************
+            MOBILE/ HEADER COM LOGOTIPO E BOTÕES
+******************************************************************
+ */
+@media only screen and (max-width: 850px) {
+  header {
+    width: 100%;
+    margin: 0 0%;
+    height: 100px; }
+    header .header-logo img {
+      width: 70%;
+      max-width: 170px;
+      position: relative;
+      top: 37px;
+      left: 14px; }
+    header .header-buttons {
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      header .header-buttons button {
+        background: #1863AD;
+        width: 43%;
+        padding: .5rem .1rem; }
+        header .header-buttons button a {
+          font-size: 10px; }
+  /*
+**********************************************************************
+       MOBILE/  GESTORA DE PARTICIPAÇÕES PRIMEIRO BLOCO
+******************************************************************
+ */
+  main {
+    width: 100%;
+    margin: 0 0%; }
+    main div {
+      width: 72%;
+      height: 79px;
+      padding: 0px 4px;
+      position: absolute;
+      top: 79%;
+      left: 5%;
+      box-sizing: border-box; }
+      main div h2 {
+        color: white;
+        font-family: arial;
+        margin: 0;
+        font-size: 18px; }
+      main div p {
+        font-size: 15px; }
+  /*
+**********************************************************************
+       MOBILE/  TERCEIRO BLOCO SATIS CORPORATE
+******************************************************************
+ */
+  .about-us {
+    width: 100%;
+    margin: 0 0%; }
+    .about-us div {
+      padding: 12px;
+      width: 45%;
+      height: 90%;
+      float: right;
+      margin-right: 20px; }
+      .about-us div h2 {
+        font-size: 18px;
+        margin-bottom: 4px; }
+      .about-us div p {
+        color: #2369B3;
+        font-family: arial;
+        font-size: 16px !important;
+        line-height: 1.1; }
+  /*
+**********************************************************************
+       MOBILE/  INTEMEZZO & PARCEIROS
+******************************************************************
+ */
+  .intermezzo {
+    width: 100%;
+    margin: 0 0%; }
+    .intermezzo h1 {
+      font-size: 18px; }
+  .partners {
+    width: 100%;
+    margin: 0 0%; }
+    .partners p {
+      font-size: 15px;
+      line-height: 1.3; }
+  /*
+**********************************************************************
+       MOBILE/  NOSSA VISÃO  NOSSA MISSÃO  NOSSOS VALORES
+******************************************************************
+ */
+  .overture-sale {
+    padding: 0px; }
+    .overture-sale div {
+      width: 30%; }
+      .overture-sale div img {
+        width: 60%;
+        margin: 1px 1px;
+        min-width: 100px; }
+      .overture-sale div h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(71, 71, 74, 0.5);
+        text-align: center;
+        font-size: .6rem;
+        width: 30%;
+        margin: 10px 20%; }
+      .overture-sale div .nossa-visao p, .overture-sale div .nossa-missao p, .overture-sale div .nossos-valores p {
+        font-size: 12px; }
+  /*
+**********************************************************************
+       MOBILE/  FOOTER
+******************************************************************
+ */
+  footer {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0 0%; }
+    footer div {
+      width: 80%; }
+      footer div img {
+        width: 50%; }
+      footer div p {
+        color: #2369B3;
+        font-family: arial;
+        font-size: 16px;
+        line-height: 1.6;
+        color: white; }
+    footer .footer-right img {
+      width: 100%;
+      position: relative;
+      top: 37px;
+      left: 5%; }
+    footer .footer-right h3 {
+      position: relative;
+      top: 0;
+      left: 5%;
+      color: white;
+      font-family: arial;
+      background: #3a73ad;
+      text-align: center;
+      padding: 5px;
+      font-size: 15px; }
+    footer .footer-left {
+      padding: 10px;
+      height: 100%; }
+      footer .footer-left img {
+        width: 71%;
+        margin: 0 0; }
+      footer .footer-left p {
+        width: 100%;
+        font-size: 13px; } }
+
+/*
+**********************************************************************
+       MOBILE/  NOSSA VISÃO  NOSSA MISSÃO  NOSSOS VALORES
+******************************************************************
+ */
+@media only screen and (min-width: 1100px) {
+  .partners .link-partners span {
+    max-height: 4.5rem; } }
+
+@media only screen and (min-width: 1500px) {
+  .partners .link-partners span {
+    max-height: 5.5rem; } }
+
+@media only screen and (max-width: 1735px) {
+  .overture-sale div.nossa-visao p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 34px 30px; }
+  .overture-sale div.nossa-missao p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 21px 30px; }
+  .overture-sale div.nossos-valores p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 21px 30px; } }
+
+@media only screen and (max-width: 1235px) {
+  .overture-sale div.nossa-visao p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif; }
+  .overture-sale div.nossa-missao p {
+    color: white;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif; }
+  .overture-sale div.nossos-valores p {
+    color: white;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif; }
+  .intermezzo h1 {
+    top: 60%; }
+  .about-us div {
+    padding: 80px 0 0 0; } }
+
+@media only screen and (max-width: 1065px) {
+  .overture-sale div.nossa-visao p {
+    color: white;
+    font-size: 13px;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif; }
+  .overture-sale div.nossa-missao p {
+    color: white;
+    font-size: 13px;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif; }
+  .intermezzo h1 {
+    top: 40%; }
+  .about-us div p {
+    font-size: 20px;
+    line-height: 1.4; } }
+
+@media only screen and (max-width: 978px) {
+  .overture-sale div.nossa-visao p {
+    color: white;
+    font-size: 12px;
+    line-height: 1.1;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2px 1px; }
+  .overture-sale div.nossa-missao p {
+    color: white;
+    font-size: 12px;
+    line-height: 1.1;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2px 1px; }
+  .overture-sale div.nossos-valores p {
+    color: white;
+    font-size: 12px;
+    line-height: 1.1;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2px 2px; }
+  .intermezzo h1 {
+    top: 40%; }
+  .about-us div {
+    padding: 0 0 0 0; } }
+
+@media only screen and (max-width: 760px) {
+  .about-us div p {
+    font-size: 13px !important;
+    line-height: 1.3; } }
+
+@media only screen and (max-width: 580px) {
+  .partners p {
+    font-size: 11px; }
+  main {
+    position: relative;
+    height: 100%; }
+    main div {
+      width: 72%;
+      height: 67px;
+      position: absolute;
+      top: 63%;
+      left: 5%; }
+      main div p {
+        font-size: 11px;
+        margin-top: 3px; }
+  .about-us div p {
+    font-size: 11px;
+    line-height: 1.3; }
+  .intermezzo h1 {
+    top: 50%;
+    font-size: 15px; } }
+
+@media only screen and (max-width: 549px) {
+  .about-us div {
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    width: 55%;
+    padding: 3px; }
+    .about-us div p {
+      font-size: 9px;
+      line-height: 1.6; } }
+
+@media only screen and (max-width: 490px) {
+  .overture-sale div .nossa-visao p {
+    padding: 0px;
+    font-size: 11px; }
+  .overture-sale div .nossa-missao p {
+    padding: 0px;
+    font-size: 11px; }
+  .overture-sale div .nossos-valores p {
+    padding: 0px;
+    font-size: 11px; }
+  .about-us div p {
+    font-size: 11px !important;
+    line-height: 1.1;
+    margin-top: 3px; }
+  .about-us div h2 {
+    font-size: 13px; } }
+
+@media only screen and (max-width: 400px) {
+  .intermezzo h1 {
+    font-size: 15px; }
+  .partners .link-partners span img {
+    left: 29%; }
+  main div h2 {
+    font-size: 13px; } }
