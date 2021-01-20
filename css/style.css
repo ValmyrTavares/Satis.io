@@ -132,18 +132,11 @@ main {
   .partners .link-partners {
     display: flex;
     flex-wrap: wrap; }
-    .partners .link-partners span {
-      width: 30%;
-      min-width: 300px;
-      max-height: 3rem;
-      margin: 10px auto;
-      position: relative; }
-      .partners .link-partners span img {
-        width: 52%;
-        position: relative;
-        top: 0;
-        left: 23%;
-        max-width: 37%; }
+    .partners .link-partners a {
+      margin: 3px 1%; }
+      .partners .link-partners a img {
+        width: 29VW;
+        min-width: 155px; }
 
 /*
 **********************************************************************
@@ -240,47 +233,28 @@ main {
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: #1A64AE;
-  height: 400px;
-  width: 100%;
-  margin: 0;
-  height: 50vh;
-  padding: 10px 10px;
-  box-sizing: border-box; }
-  footer div {
-    padding: 20px; }
-    footer div img {
-      width: 50%; }
-    footer div p {
+  background-color: #1A64AE;
+  padding: 20px; }
+  footer .footer-left {
+    padding: 20% 2%; }
+    footer .footer-left img {
+      margin: 30px 0;
+      width: 32vw; }
+  footer .footer-right {
+    padding: 1% 10%; }
+    footer .footer-right img {
+      width: 100%;
+      position: relative;
+      top: -2%;
+      max-width: 398px; }
+    footer .footer-right p {
       color: #2369B3;
       font-family: arial;
       font-size: 16px;
       line-height: 1.6;
       color: white;
-      font-size: 20px;
+      font-size: 1.8vw;
       line-height: 1.1; }
-  footer .footer-right img {
-    width: 100%;
-    position: relative;
-    top: 6%;
-    max-width: 398px;
-    left: 8%; }
-  footer .footer-right h3 {
-    position: relative;
-    top: 0%;
-    left: 8%;
-    color: white;
-    font-family: arial;
-    background: #3a73ad;
-    text-align: center;
-    padding: 5px;
-    font-size: 20px;
-    max-width: 389px; }
-  footer .footer-left img {
-    margin: 30px 0;
-    max-width: 300px; }
-  footer .footer-left p {
-    width: 80%; }
 
 /*
 **********************************************************************
@@ -364,12 +338,6 @@ footer {
     margin: 0 0%; }
     .intermezzo h1 {
       font-size: 18px; }
-  .partners {
-    width: 100%;
-    margin: 0 0%; }
-    .partners p {
-      font-size: 15px;
-      line-height: 1.3; }
   /*
 **********************************************************************
        MOBILE/  NOSSA VISÃO  NOSSA MISSÃO  NOSSOS VALORES
@@ -396,46 +364,27 @@ footer {
 **********************************************************************
        MOBILE/  FOOTER
 ******************************************************************
- */
+ */ }
+
+@media only screen and (max-width: 850px) and (max-width: 600px) {
   footer {
-    display: block;
-    height: 100%;
-    width: 100%;
-    margin: 0 0%; }
-    footer div {
-      width: 80%; }
-      footer div img {
-        width: 50%; }
-      footer div p {
-        color: #2369B3;
-        font-family: arial;
-        font-size: 16px;
-        line-height: 1.6;
-        color: white; }
-    footer .footer-right img {
-      width: 100%;
-      position: relative;
-      top: 37px;
-      left: 5%; }
-    footer .footer-right h3 {
-      position: relative;
-      top: 0;
-      left: 5%;
-      color: white;
-      font-family: arial;
-      background: #3a73ad;
-      text-align: center;
-      padding: 5px;
-      font-size: 15px; }
+    display: block; }
     footer .footer-left {
       padding: 10px;
       height: 100%; }
       footer .footer-left img {
-        width: 71%;
-        margin: 0 0; }
-      footer .footer-left p {
         width: 100%;
-        font-size: 13px; } }
+        margin: 0 0; }
+    footer .footer-right img {
+      width: 100%; }
+    footer .footer-right p {
+      font-size: 3vw; } }
+
+@media only screen and (max-width: 850px) {
+  .partners p {
+    font-size: 3vw; }
+  .partners .link-partners a {
+    margin: 2px auto; } }
 
 /*
 **********************************************************************
@@ -538,8 +487,6 @@ footer {
     line-height: 1.3; } }
 
 @media only screen and (max-width: 580px) {
-  .partners p {
-    font-size: 11px; }
   main {
     position: relative;
     height: 100%; }
