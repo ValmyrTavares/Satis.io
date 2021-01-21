@@ -158,69 +158,35 @@ main {
       text-align: center;
       font-size: 1rem;
       width: 40%;
-      margin: 10px 31%;
-      max-width: 174px; }
-    .overture-sale div .nossa-visao {
-      display: none;
-      position: absolute;
-      top: 0px;
-      left: -11px;
-      background: #205997;
-      height: 98%;
-      padding: 5px 11px;
-      width: 100%;
-      overflow: auto; }
-      .overture-sale div .nossa-visao p {
-        color: white;
-        font-size: 18px;
-        line-height: 1.7;
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 10px; }
-    .overture-sale div.show-box {
-      display: block; }
-    .overture-sale div .nossa-missao {
-      display: none;
-      position: absolute;
-      top: -1px;
-      left: -11px;
-      background: #0098da;
-      height: 0;
-      overflow: hidden;
-      padding: 6px 11px;
-      width: 100%;
-      overflow: auto; }
-      .overture-sale div .nossa-missao p {
-        color: white;
-        font-size: 18px;
-        line-height: 1.5;
-        font-family: Arial, Helvetica, sans-serif; }
-    .overture-sale div.show-box {
-      display: block;
-      animation: open-close 1s;
-      animation-fill-mode: forwards; }
-
-@keyframes open-close {
-  from {
-    height: 0; }
-  to {
-    height: 96%; } }
-    .overture-sale div .nossos-valores {
-      display: none;
-      position: absolute;
-      top: 0px;
-      left: -10px;
-      background: #00a3b2;
-      height: 98%;
-      padding: 5px 11px;
-      width: 100%;
-      overflow: auto; }
-      .overture-sale div .nossos-valores p {
-        color: white;
-        font-size: 17px;
-        line-height: 1.5;
-        font-family: Arial, Helvetica, sans-serif; }
-    .overture-sale div.show-box {
-      display: block; }
+      margin: 10px 31%; }
+    .overture-sale div p {
+      display: none; }
+  .overture-sale div:hover p {
+    display: block;
+    text-align: center; }
+  .overture-sale #nossaVisao:hover {
+    background: #1b5591; }
+    .overture-sale #nossaVisao:hover h3 {
+      color: white; }
+    .overture-sale #nossaVisao:hover p {
+      color: white;
+      padding: 0 5%; }
+  .overture-sale #nossaMissao:hover {
+    background: #00a0df; }
+    .overture-sale #nossaMissao:hover h3 {
+      color: white; }
+    .overture-sale #nossaMissao:hover p {
+      color: white;
+      padding: 0 5%;
+      margin: 1%; }
+  .overture-sale #nossosValores:hover {
+    background: #33bc65; }
+    .overture-sale #nossosValores:hover h3 {
+      color: white; }
+    .overture-sale #nossosValores:hover p {
+      color: white;
+      padding: 2% 5%;
+      margin: 1px; }
 
 /*
 **********************************************************************
@@ -337,8 +303,6 @@ footer {
     .overture-sale div {
       width: 30%; }
       .overture-sale div img {
-        width: 60%;
-        margin: 1px 1px;
         min-width: 100px; }
       .overture-sale div h3 {
         font-family: Arial, Helvetica, sans-serif;
@@ -369,7 +333,8 @@ footer {
     footer .footer-right p {
       font-size: 3.5vw; }
   .partners p {
-    font-size: 3.2vw; }
+    font-size: 3.2vw;
+    margin: 0px 1% 1% 1%; }
   .partners .link-partners a {
     margin: 2px auto; }
   main {
@@ -399,7 +364,21 @@ footer {
       color: #2369B3;
       font-family: arial;
       font-size: 3.2vw;
-      margin: 1px; } }
+      margin: 1px; }
+  .overture-sale {
+    display: flex;
+    flex-direction: column; }
+    .overture-sale div {
+      width: 100%; }
+      .overture-sale div margin
+img {
+        width: 90%;
+        margin: 1px 5%; }
+      .overture-sale div h3 {
+        font-size: 6vw;
+        margin: 10px auto;
+        width: 90%;
+        text-align: center; } }
 
 /*
 **********************************************************************
