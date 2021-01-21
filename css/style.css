@@ -143,7 +143,8 @@ main {
 .overture-sale {
   display: flex;
   justify-content: space-around;
-  padding: 26px; }
+  padding: 26px;
+  font-family: arial; }
   .overture-sale div {
     width: 30%;
     cursor: pointer;
@@ -165,14 +166,14 @@ main {
     display: block;
     text-align: center; }
   .overture-sale #nossaVisao:hover {
-    background: #1b5591; }
+    background-image: linear-gradient(to bottom right, #002cdf, #0093df); }
     .overture-sale #nossaVisao:hover h3 {
       color: white; }
     .overture-sale #nossaVisao:hover p {
       color: white;
       padding: 0 5%; }
   .overture-sale #nossaMissao:hover {
-    background: #00a0df; }
+    background-image: linear-gradient(to bottom right, #0070ca, #00cfca); }
     .overture-sale #nossaMissao:hover h3 {
       color: white; }
     .overture-sale #nossaMissao:hover p {
@@ -180,7 +181,7 @@ main {
       padding: 0 5%;
       margin: 1%; }
   .overture-sale #nossosValores:hover {
-    background: #33bc65; }
+    background-image: linear-gradient(to bottom right, #33bc65, #00ffca); }
     .overture-sale #nossosValores:hover h3 {
       color: white; }
     .overture-sale #nossosValores:hover p {
@@ -224,6 +225,10 @@ footer {
             MOBILE/ HEADER COM LOGOTIPO E BOTÕES
 ******************************************************************
  */
+@media (min-width: 1500px) {
+  p, li, a {
+    font-size: 27px !important; } }
+
 @media only screen and (max-width: 850px) {
   header {
     width: 100%;
