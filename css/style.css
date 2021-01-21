@@ -398,7 +398,8 @@ footer {
     .about-us div p {
       color: #2369B3;
       font-family: arial;
-      font-size: 2.1vw; } }
+      font-size: 3.2vw;
+      margin: 1px; } }
 
 /*
 **********************************************************************
@@ -462,10 +463,7 @@ footer {
     line-height: 1.4;
     font-family: Arial, Helvetica, sans-serif; }
   .intermezzo h1 {
-    top: 40%; }
-  .about-us div p {
-    font-size: 20px;
-    line-height: 1.4; } }
+    top: 40%; } }
 
 @media only screen and (max-width: 978px) {
   .overture-sale div.nossa-visao p {
@@ -491,29 +489,10 @@ footer {
   .about-us div {
     padding: 0 0 0 0; } }
 
-@media only screen and (max-width: 760px) {
-  .about-us div p {
-    font-size: 13px !important;
-    line-height: 1.3; } }
-
 @media only screen and (max-width: 580px) {
-  .about-us div p {
-    font-size: 11px;
-    line-height: 1.3; }
   .intermezzo h1 {
     top: 50%;
     font-size: 15px; } }
-
-@media only screen and (max-width: 549px) {
-  .about-us div {
-    position: absolute;
-    top: 5%;
-    left: 40%;
-    width: 55%;
-    padding: 3px; }
-    .about-us div p {
-      font-size: 9px;
-      line-height: 1.6; } }
 
 @media only screen and (max-width: 490px) {
   .overture-sale div .nossa-visao p {
@@ -524,13 +503,7 @@ footer {
     font-size: 11px; }
   .overture-sale div .nossos-valores p {
     padding: 0px;
-    font-size: 11px; }
-  .about-us div p {
-    font-size: 11px !important;
-    line-height: 1.1;
-    margin-top: 3px; }
-  .about-us div h2 {
-    font-size: 13px; } }
+    font-size: 11px; } }
 
 @media only screen and (max-width: 400px) {
   .intermezzo h1 {
